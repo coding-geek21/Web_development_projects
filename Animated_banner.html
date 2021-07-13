@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and Animations</title>
+    <style>
+   
+        @keyframes text1{
+            10%{
+                opacity: 1;
+            }
+            40%{
+                opacity:0;
+            }
+        }
+        @-webkit-keyframes text1{
+            10%{
+                opacity: 1;
+            }
+            40%{
+                opacity:0;
+            }
+        }
+        @keyframes text2{
+            30%{
+                opacity: 0;
+            }
+            60%{
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes text2{
+            30%{
+                opacity: 0;
+            }
+            60%{
+                opacity:1;
+            }
+        }
+
+        @keyframes banner {
+            10%{background-color: coral;}
+            30%{background-color: blueviolet;}
+            40%{background-color: brown;}
+            60%{background-color:turquoise}
+        }
+
+        .banner{
+            position: relative;
+            width:1200px;
+            height:400px;
+            margin:0 auto;
+            background-size: 100% 100%;
+            background: url('https://davekochphoto.com/wp-content/uploads/2018/05/IMG_5289-Edit.jpg');
+            background-repeat: no-repeat;
+        }
+        .text1,.text2{
+            position: absolute;
+            font-size:60px;
+            width: 100%;
+            top:20%;
+            height: 100%;
+            color:white;
+            text-align: center;
+            opacity: 0;
+        }
+        .animation{
+            background-color:teal;
+            position: absolute;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            animation: banner 6s infinite;
+            -webkit-animation: banner 6s infinite;
+        }
+
+        .text1
+        {
+        animation : text1 6s infinite;
+        -webkit-animation : text1 6s infinite;
+        }
+
+        .text2
+        {
+        animation : text2 6s infinite;
+        -webkit-animation : text2 6s infinite;
+        }
+    </style>
+</head>
+<body>
+        
+    <section>
+        <div class="banner">
+            <div class="animation">
+                <div class="text1">
+                    Unlimited Storage
+                </div>
+                <div class="text2">
+                    $15/Month
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
