@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <script>
+            var result=" ";
+            function display(num){
+                result=result+num;
+                document.getElementById('display-panel').innerHTML= result;
+                 
+            }
+           
+            function clearvalue(){
+                document.getElementById('display-panel').innerHTML=" ";
+                result=" ";
+                
+            }
+            function calculate(){
+                Num=window.result;
+                document.getElementById('display-panel').innerHTML=eval(Num); 
+                
+            }
+                
+               
+           
+        </script>
+        <style>
+            body{
+                
+                background-image: url('calculator.jpg');
+                font-family: 'Source Sans Pro', sans-serif;
+                
+            }
+            .container{
+                width:320px;
+                height:350px;
+                background-color:lightpink;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 80px;
+                border-radius: 15px;
+                padding: 12px;
+                
+                
+            }
+            table{
+                border: 2px solid red;
+                border-collapse: collapse;
+                color:black;
+                font-size: 30px;
+                
+            }
+            #display-panel{
+                height: 100px;
+                border: 2px solid purple;
+                font-size: 30px;
+                background-color: white;
+            }
+            td{
+                width: 125px;
+                height: 50px;
+                border: 2px solid purple;
+                text-align: center;
+                
+            }
+            input[type="text"] {
+                background: transparent;
+                border: none;
+                font-size: 20px;
+                height: 50px;
+            }
+            #heading{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                background-color: lightpink;
+                height: 70px;
+                width:150px;
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 45px;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+           Calculator
+        </div>
+        <div class="container">
+            <form>
+                <div id="display-panel">
+                </div>
+                <button type="button" value="Clear"  onclick="clearvalue()">Clear</button>
+            </form>
+            <table>
+                <tr>
+                    <td id="7" onclick="display('7')"> 7 </td>
+                    <td id="8" onclick="display('8')" > 8 </td>
+                    <td id="9" onclick="display('9')"> 9 </td>
+                    <td id="+" onclick="display('+')"> + </td>
+                </tr>
+                <tr>
+                    <td id="4"  onclick="display('4')"> 4 </td>
+                    <td id="5"  onclick="display('5')"> 5 </td>
+                    <td id="6"  onclick="display('6')"> 6 </td>
+                    <td id="-"  onclick="display('-')"> - </td>
+                </tr>
+                <tr>
+                    <td id="1"  onclick="display('1')"> 1</td>
+                    <td id="2"  onclick="display('2')"> 2 </td>
+                    <td id="3"  onclick="display('3')"> 3 </td>
+                    <td id="*"  onclick="display('*')"> * </td>
+                </tr>
+                <tr>
+                    <td id="0"  onclick="display('0')"> 0 </td>
+                    <td id="."  onclick="display('.')"> . </td>
+                    <td id="/"  onclick="display('/')"> / </td>
+                    <td id="="  onclick="calculate()"> = </td>
+                    
+                </tr>
+            </table>
+        </div> 
+    </body>
+</html>
