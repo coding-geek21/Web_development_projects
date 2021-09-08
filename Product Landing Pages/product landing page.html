@@ -1,0 +1,255 @@
+<html>
+<head>
+  <title>Product landing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+     body{
+  background-image: white;
+  color:white;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 700px) {
+   #pricing{
+    flex-direction:column;
+  }
+  footer{
+     visibility: hidden;
+  }
+}
+#header-img{
+   width:60px;
+   height:60px;
+   margin-left:90px;
+   float:left;
+   padding-right:10px;
+}
+#header{
+  display:inline-block;
+  top:0;
+  left:0;
+  right:0;
+  height:80px;
+  padding:15px;
+  position:fixed;
+  background-color:black;
+}
+#title{
+  float:left;
+  display:inline-block;
+}
+.nav-bar{
+  float:right;
+  display:inline-block;
+}
+nav li ,a{
+  list-style:none;
+  padding-right:45px;
+  display:inline-block;
+  text-decoration:none;
+  float:right;
+  font-size:20px;
+  color:white;
+  font-weight:bold;
+}
+.nav-link:hover{
+     font-size:25px;
+     color:grey;
+}
+#product-description{
+   text-align:center;
+   color:black;   
+  font-size:20px;
+  background-image:url('https://images.wagjag.com/images/deals/bamboo-mattress-protector-2061242-3942392-regular.jpg');
+  background-repeat:no-repeat;
+  background-size:100%;
+  width:auto;
+  height:1000px;
+  margin-bottom:-100px;
+ }
+#product-title{
+   padding-top:400px;
+}
+#email{
+   font-size:15px; 
+}
+#email{
+   height:40px;
+   width:300px;
+}
+#submit{
+  border-radius:6px;
+  padding:10px;
+  font-size:20px;
+  background-color:black;
+  color:white;
+}
+#submit:hover{
+  font-size:25px;
+}
+.about{
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 3px dashed gray;
+}
+article{
+    color:black;
+}
+.about p{
+    font-size:18px;
+}
+.about h3{
+     font-size:24px;
+}
+.image{
+    width: 100px;
+    height: 80px;
+}
+.image1{
+    width: 80px;
+    height: 80px;
+}
+#How_it_works{
+        margin-top: 60px;
+}
+#pricing {
+    display: flex;
+    height: 650px;
+    margin: 20px;
+   
+  }
+  #prize1 {
+    border: 3px solid dodgerblue;
+    width: 400px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px;
+    color:dodgerblue;
+  }
+
+  #prize2 {
+    border:3px solid orangered;
+    width: 400px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px;
+    color:orange;
+  }
+  #prize3 {
+      border: 3px solid salmon;
+      width: 400px;
+      font-size: 18px;
+      border-radius: 10px;
+      margin: 20px;
+      color:salmon;
+  }
+footer{
+  width:800px;
+  height:auto;
+  background-color:black;
+  color:white;
+  margin:auto;
+  padding:5px;
+  font-size:15px;
+  bottom:0;
+  opacity:0.7;
+}
+#prize1 p,#prize2 p,#prize3 p{
+  text-align:left;
+  padding:10px;
+  font-family:verdana;
+  
+}
+#price-btn{
+  border-radius:10px;
+  background-color:black;
+  font-size:20px;
+  color:white;
+  padding:10px;
+}
+#price-btn:hover{
+  background-color:white;
+  color:black;
+  font-weight:bolder;
+  border:2px solid green;
+} 
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header id="header">
+      <img src="https://i.ibb.co/K6MqGW8/mattress.png" alt="mattress" border="0" id="header-img">
+      <h1 id="title">Livina</h1>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#How_it_works" class="nav-link">How it works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <ul>
+      </nav> 
+    </header>
+    <article>     
+        <div id="product-description">
+            <h1 id="product-title">Soft top of your mattress that lets you sink in like a cloud</h1>
+            <form id="form" action="/https://www.freecodecamp.com/email-submit">  
+            <h3>For more queries and orders</h3> 
+            <label for="email"></label>
+            <input id="email" type="email" required placeholder="Enter your email-id" name="email"><br><br>
+            <input type="submit" id="submit" value="Contact Us"></input>
+            </form>
+        </div>
+        <div id="features">
+            <div class="about">
+                <h3>Choose Your Mattress</h3>
+                <p>Livina is all about finding the best mattress for you. Choose based on your firmness preference and sleeping position.</p>
+                <img src="https://i.ibb.co/B6kLTyg/sleep-man.png" alt="sleep-man" border="0" class="image">
+            </div>
+                <div class="about">
+                <h3>Side Sleeper</h3>
+                <p>Support designed to relieve pressure points. Best for side sleepers or people who toss and turn all night long.</p>
+                <img src="https://i.ibb.co/L9hz2hY/moon.png" alt="moon" border="0" class="image1">
+            </div>
+            <div  class="about">
+                <h3>Back & Stomach Sleeper</h3>
+                <p>Support designed to contour to your body. Best for back and stomach sleepers or couples of different sleeping positions.</p>
+                <img src="https://i.ibb.co/Ykpbm6y/position.png" alt="position" border="0" class="image1">
+            </div>
+        </div>
+        <div id="How_it_works">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Jug74hPtNWk" frameborder="0"  id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+        <div id="pricing">
+            <div id="prize1">
+              <h2>Orthopedic Memory foam Mattress</h2>
+                  <p>Pillow Feel:Fluffy and medium firm , Warranty:
+3 months manufacturer warranty ,  Material Type:350 GSM spun polyester fabric , Shipping: Direct from factory/warehouse</p>
+              <img src="https://wakefit-co.s3.ap-south-1.amazonaws.com/img/product-thumbnails/memory-foam-mattress-rectangle.webp" width="400" height="200">
+              <h2>INR :6020.00</h2>
+              <button type="button" id="price-btn">Shop Now</button>
+            </div>
+            <div id="prize2">
+                <h2>Dual Comfort Mattress</h2>
+                <p>Mattress Feel:Medium Soft and Medium Firm, Mattress Material:Soft and High Resilience Foam ,Mattress Usability: Medium firm on the grey side and medium soft on the white side,Cover Material:Premium quality, high GSM spun polyester fabric</p>
+                <img src="https://wakefit-co.s3.ap-south-1.amazonaws.com/img/product-thumbnails/dual-comfort-mattress-rectangle.webp" width="400" height="200">
+              <h2>INR :1177.00</h2>
+               <button type="button" id="price-btn">Shop Now</button>
+            </div>
+            <div  id="prize3">
+                <h2>Waterproof Mattress Protector</h2>
+                <p>Protector Feel:Soft and textured,Warranty:30 wash cycle manufacturer warranty,Features:Elastic for tucking in the corners ,Care:Quick machine washable material for hygiene and cleanliness film</p>
+              <img src="https://wakefit-co.s3.ap-south-1.amazonaws.com/img/product-thumbnails/mattress-protector-rectangle.webp" width="400" height="200">
+              <h2> INR 666.0</h2>
+              <button type="button" id="price-btn">Shop Now</button>
+            </div>
+        </div>
+    </article>
+    <footer>
+      <h3>Privacy    Terms    Contacts</h3>
+      <p>Copyright 2016, Livina</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+  </body>
+</html>  
