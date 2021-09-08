@@ -1,0 +1,379 @@
+
+ body {
+  margin: 0;
+  font-family: 'Billion Dreams'; 
+  font-weight: lighter;
+  color:white;
+}
+
+@font-face {
+    font-family: 'Billion Dreams';
+    src:url('fonts/LemonJellyPersonalUse-dEqR.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font';
+  src:url('fonts/BeautifulPeoplePersonalUse-dE0g.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Font1';
+src:url('fonts/HashedBrowns-WyJgn.ttf') format('truetype');
+font-weight: lighter;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'PumkinStory';
+src:url('fonts/PumpkinStory-vmKrM.ttf') format('truetype');
+font-weight: lighter;
+font-style: normal;
+}
+
+
+/*  Welcome section and navbar */
+.head-container{
+  position:fixed;
+  background-color:black;
+  padding:10px;
+  height:45px;
+  width:100%;
+}
+.header-right {
+  float: right;
+}
+
+
+.header-right a{
+  padding: 0 25px;
+  color: white;
+  display: block;
+  font-size:30px;
+  text-decoration:none;
+  float: right;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  color: cyan;
+}
+
+/* Add CSS for menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 35px;
+  
+} 
+
+.ic{
+  display: none;
+}
+
+.fa {
+  margin-right: 15px;
+}
+
+.profile-pic{
+  height:60%;
+  width:25%;
+  border-radius:200px;
+  float:left;
+  margin-left:15px;
+  padding-top:20px;
+  
+}
+
+.welcome-section{
+  background: #8A2387;  
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top:100px;
+  height:80%;
+  padding-left:10px;
+  padding-right:10px;
+  text-align: center;
+  right:0;
+  left:0;
+}
+
+
+.welcome-section h1{
+  font-size:80px;
+  font-weight:normal;
+  font-family:'PumkinStory' ;
+  text-shadow: 2px 4px 4px black;  
+}
+.welcome-section p{
+  font-size:30px;
+  text-align:center;
+  
+}
+ 
+/*Button style*/
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  
+}
+
+.btn-hover.color-8 {
+background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+/* Projects  Section*/
+
+.clear{
+clear: both;
+}
+
+
+.projects{
+height:200%;
+background: #8A2387;  
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-top:10px;
+}
+
+.container{
+margin: 40px;
+}
+
+.projects-sec-title{
+font-family: 'Font'; 
+text-align: center;
+font-size:45px;
+color:cyan;
+text-decoration: underline;
+}
+
+.project-pic-left{
+width:40%;
+padding-right:100px;
+height:30%;
+border-radius:4px;
+float: left;
+}
+
+.project-pic-right{
+width:40%;
+padding-left:100px;
+height:30%;
+border-radius:4px;
+float: right;
+}
+
+.description h3{
+font-family:'Font1';
+font-weight: lighter;
+font-size: 35px;
+color:black;
+text-shadow: 1px 2px 2px red;
+}
+.description p,.description li{
+font-family:cursive;
+font-weight: lighter;
+font-size:20px;
+}
+
+/* Contact Me */
+
+
+.contact{
+height:40%;
+background: #8A2387;  
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-top:10px;
+text-align: center;
+}
+
+.contact h1{
+font-size: 40px;
+font-family:'Font1';
+text-shadow: 1px 2px 2px red;
+color: black;
+}
+
+.fa {
+padding: 15px;
+font-size: 35px;
+width: 20px;
+text-align: center;
+text-decoration: none;
+margin: 5px 12px;
+border-radius:45px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-google {
+background: red;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+/* footer */
+
+footer{
+  height:10%;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size:18px;
+  background-color:black;
+  padding:8px;
+}
+
+
+
+/*  Responsive web design for mobile for max width  */
+
+@media all and (max-width: 670px) {
+ 
+.header-right{
+  display: none;
+}
+
+.ic{
+  display:block;
+}
+  
+
+.profile-pic{
+  height:200px;
+  width:180px;
+}
+
+.welcome-section{
+  height:150%;
+  background: #FF0099 no-repeat center fixed;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.welcome-section h1{
+  font-size:60px;
+
+}
+
+.projects{
+height:300%;
+padding-top:5px;
+background: #FF0099 no-repeat center fixed;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+
+.container{
+margin:20px;
+}
+
+.projects-sec-title{
+
+font-size:30px;
+
+}
+
+.project-pic-left{
+width:100%;
+height:15%;
+margin-bottom:20px;
+
+}
+
+.project-pic-right{
+width:100%;
+height:15%;
+margin-bottom:20px;
+}
+
+.description h3{
+ font-size: 35px;
+ color: aqua;
+ text-shadow: 1px 2px 2px black;
+}
+
+
+.description p,.description li{
+font-size:18px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight:400;
+}
+
+
+.contact{
+ background: #FF0099 no-repeat center fixed;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+.contact h1{
+ color: aqua; 
+ text-shadow: 1px 2px 2px black;
+ }
+ 
+ footer{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:400;
+
+}
+
+}
