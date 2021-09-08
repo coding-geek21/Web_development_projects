@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family:arial;
+  text-decoration: none;
+  
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+header{
+	background: #f0f3b0;
+	background: -webkit-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -moz-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -ms-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -o-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: linear-gradient(to right, #f0f3b0, #d8fcdd);background-color:#f0f3b0;
+	height:80px;
+
+	width: 100%;
+}
+
+.logo{
+	margin:0px 30px;
+	float: left;
+	width:90px;
+	height:80px;
+}
+.nav{	
+	color: black;
+	font-size:18px;
+	font-weight: bold;
+	float: left;
+	margin: 25px 60px;
+	text-decoration: none;
+}
+.movies-list{
+	background-color: black;
+	height: 650px;	
+}
+.movies-list{
+	color: white;
+}
+.mv{
+	padding-top:50px;
+}
+.movies{
+	width:25%;
+    position:relative;
+}
+.tile p{
+	position:absolute;
+	top:120px;
+	background-color:black;
+	opacity:0.8;
+	width:65%;
+	text-align: center;
+	font-size:12px;
+}
+.tile h5{
+	position:absolute;
+	top:95px;
+	background-color:black;
+	opacity:0.8;
+	width:65%;
+	color: white;
+	text-align: center;
+}
+
+.movies{
+	float: left;
+	margin-bottom:20px;
+	margin-top:50px;
+}
+.clear{
+	clear: left;
+}
+footer{
+	height: 100px;
+	color: black;
+	padding-top:20px;	
+	background: #f0f3b0;
+	background: -webkit-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -moz-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -ms-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: -o-linear-gradient(left, #f0f3b0, #d8fcdd);
+	background: linear-gradient(to right, #f0f3b0, #d8fcdd);background-color:#f0f3b0;
+	
+}
+.genere{
+	background-color:black;
+	padding:30px;
+	   
+}
+.genere-img{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.container1{
+   background-color:black;
+}
+#myselection{
+	margin-bottom:30px;
+	border-radius:4px;
+	width:30%;
+	font-size:20px;
+	padding:5px;
+}
+.search{
+	border-radius:4px;
+	width:30%;
+	padding: 5px;
+	font-size:20px;
+}
+.search-icon{
+	background-color: white;
+	width:40px;
+	height:40px;
+	margin-bottom:5px;
+
+}

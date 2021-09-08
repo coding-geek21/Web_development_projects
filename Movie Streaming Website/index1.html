@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="jquery-3.5.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('#myselection').on('change', function(){
+		var demovalue = $(this).val(); 
+		$("div.myDiv").hide();
+		$("#show"+demovalue).show();
+		});
+		});
+
+	</script>
+</head>
+
+<body>
+
+<select id="myselection">
+<option>All</option>
+<option value="One">Action</option>
+<option value="Two">Drama</option>
+<option value="Three">Comedy</option>
+</select>
+</div>
+<div id="showOne" class="myDiv">
+<img src="images/action1.jpg" alt="Action"/>
+<img src="images/action2.jpg" alt="Action"/>
+<img src="images/action3.jpg" alt="Action"/>
+<img src="images/action4.jpg" alt="Action"/>
+<img src="images/action5.jpg" alt="Action"/>
+<img src="images/action6.jpg" alt="Action"/>
+<img src="images/action7.jpg" alt="Action"/>
+<img src="images/action8.jpg" alt="Action"/>
+<img src="images/action9.jpg" alt="Action"/>
+<img src="images/action10.jpg" alt="Action"/>
+</div>
+<div id="showTwo" class="myDiv">
+<img src="images/drama1.jpg" alt="drama"/>
+<img src="images/drama2.jpg" alt="drama"/>
+<img src="images/drama3.jpg" alt="drama"/>
+<img src="images/drama4.jpg" alt="drama"/>
+<img src="images/drama5.jpg" alt="drama"/>
+<img src="images/drama6.jpg" alt="drama"/>
+<img src="images/drama7.jpg" alt="drama"/>
+<img src="images/drama8.jpg" alt="drama"/>
+</div>
+
+<div id="showThree" class="myDiv">
+<img src="images/comedy1.jpg" alt="Comedy"/>
+<img src="images/comedy2.jpg" alt="Comedy"/>
+<img src="images/comedy3.jpg" alt="Comedy"/>
+<img src="images/comedy4.jpg" alt="Comedy"/>
+<img src="images/comedy5.jpg" alt="Comedy"/>
+<img src="images/comedy6.jpg" alt="Comedy"/>
+</div>
+
+
+
+</body>
+</html>
+

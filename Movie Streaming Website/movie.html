@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="caurosel.css">
+	<title>J Movies Entertainment portal</title>
+	<meta charset="utf-8">
+	<script src="jquery-3.5.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('#myselection').on('change', function(){
+		var demovalue = $(this).val(); 
+		$("div.myDiv").hide();
+		$("#show"+demovalue).show();
+		});
+		});
+
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			
+			<a href="index.html"><img class="logo" src="logo1.png"></a>
+			<a href="#" class="nav">Movies</a>
+			<a href="#" class="nav">TV series</a>
+			<a href="#" class="nav">Audio</a>
+			
+		</div>
+	</header>
+	<div class="main-content">
+		
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/Hero_IN_TP2/b37e6291-87a7-4095-bff7-5e92925016b6._UR3000,600_SX1500_FMwebp_.jpg"  height="400" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/Hero_PV_IN_Tamil_MerchPage/d61052e1-917a-46ec-9195-3207d206a8fe._UR3000,600_SX1500_FMwebp_.jpg" height="400"  class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/Hero_IN_Conjuring2/en_us-hero_in_conjuring2-3000-600._UR3000,600_SX1500_FMwebp_.jpg" height="400"  class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/Hero_IN_VIP2_UPDATED/c07f7d65-d183-421b-9bbc-d389ab677149._UR3000,600_SX1500_FMwebp_.jpg" height="400"  class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </a>
+		</div>
+	</div>
+
+	<div class="genere">
+	  <div class="container1">
+		<div>
+		 <select id="myselection">
+		  <option>All</option>
+		  <option value="One">Action</option>
+		  <option value="Two">Drama</option>
+		  <option value="Three">Comedy</option>
+		 </select>
+		 <input type="text" class="search" placeholder="Search..">
+		 <img src="search.png" class="search-icon">
+		</div>
+		<div id="showOne" class="myDiv">
+		<img class="genere-img" src="images/action1.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action2.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action3.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action4.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action5.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action6.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action7.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action8.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action9.jpg" alt="Action"/>
+		<img class="genere-img" src="images/action10.jpg" alt="Action"/>
+		</div>
+		<div id="showTwo" class="myDiv">
+		<img class="genere-img" src="images/drama1.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama2.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama3.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama4.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama5.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama6.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama7.jpg" alt="drama"/>
+		<img class="genere-img" src="images/drama8.jpg" alt="drama"/>
+		</div>
+
+		<div id="showThree" class="myDiv">
+		<img class="genere-img" src="images/comedy1.jpg" alt="Comedy"/>
+		<img class="genere-img" src="images/comedy2.jpg" alt="Comedy"/>
+		<img class="genere-img" src="images/comedy3.jpg" alt="Comedy"/>
+		<img class="genere-img" src="images/comedy4.jpg" alt="Comedy"/>
+		<img class="genere-img" src="images/comedy5.jpg" alt="Comedy"/>
+		<img class="genere-img" src="images/comedy6.jpg" alt="Comedy"/>
+		</div>
+	  </div>
+    </div>
+
+	<footer>
+		<div class="container">
+			
+			<img class="logo" src="logo1.png">
+			<h5>Powered by J Movie Entertainment Portal 2021. All Rights Reserved.</h5>
+			
+		</div>
+	</footer>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

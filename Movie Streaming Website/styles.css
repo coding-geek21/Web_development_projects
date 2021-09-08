@@ -1,0 +1,33 @@
+<style>
+.myDiv{
+display:none;
+text-align:center;
+}  
+.myDiv img{
+margin: 0 auto;
+}
+.myDiv span{
+text-align: center;
+background: #ffdede;
+padding: 6px 10px;
+display: block;
+width: 100px;
+border: 1px solid #d47c7c;
+margin: 8px auto;
+}
+#showOne{
+color:red;
+border:1px solid red;
+padding:10px;
+}
+#showTwo{
+color:green;
+border:1px solid green;
+padding:10px;
+}
+#showThree{
+color:blue;
+border:1px solid blue;
+padding:10px;
+}
+</style>
