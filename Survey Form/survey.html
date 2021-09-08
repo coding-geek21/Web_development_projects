@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title> Survey Form </title>
+<style>
+  body{
+background-image:url('https://i.pinimg.com/originals/76/24/47/762447d9ca0f97b983f056b842209fc3.jpg');
+  background-repeat:no-repeat;
+  background-size:100%;
+ 
+}
+form{
+  background-color:pink;
+  padding:40px;
+  margin:auto;
+  width:800px;  
+  opacity: 0.8;
+  font-family: 'Courgette', cursive;
+  font-size:25px;
+  
+}
+header{
+   font-family: 'Courgette', cursive;
+   text-align:center;
+   color:white;
+}
+h1{
+  font-size:50px;
+}
+#number , #name , #email ,#dropdown{
+  height:30px;
+  width:500px;
+}
+input{
+  height:20px;
+  width:20px;
+  
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <header>
+     <h1 id="title">Rate my website!</h1>  
+  <p id="description">Please let us know your experience with our website</p>
+  </header>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label><br>
+  <input type="text" id="name" required placeholder="Enter the name">
+  <br><br>
+  <label for="email" id="email-label">Email</label><br>
+  <input type="email" id="email" required placeholder="Enter the email"  width="100" height="100">
+  <br><br> 
+  <label for="number" id="number-label">Age</label><br>
+  <input type="number" id="number" min="1" max="100" required placeholder="Enter the age">
+  <br><br> 
+  <p>Please rate my site:</p>
+  <select id="dropdown">
+    <option value="1" name="rate" id="excellent">Excellent</option>
+    <option value="2" name="rate" id="Good">Good</option>
+    <option value="3" name="rate" id="not">Not worth</option>
+  </select>  
+    <br><br>
+    
+    <p> Would you recommend this website to a friend ?</p>   
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Definitely</label><br>
+    <input type="radio" id="maybe" name="recommend" value="maybe">
+    <label for="female">Maybe</label><br>
+    <input type="radio" id="no" name="recommend" value="notsure">
+    <label for="no">Not sure</label>
+    <br><br>
+    
+    <p>How should we improve our website more ? </p>
+    <input type="checkbox" id="updates" name="improve" value="updates">
+    <label for="front"> Provide more updates</label><br>
+    <input type="checkbox" id="user" name="improve" value="user">
+    <label for="Back-end">User-friendly</label><br>
+    <input type="checkbox" id="other" name="projects" value="others">
+    <label for="other">others</label>
+    <br><br>  
+  <p>Any comments or suggestions?</p>
+  <textarea cols="100" rows="5"></textarea>
+  <br><br>
+   <button type="submit" id="submit"> Submit </button> 
+</form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>  
