@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <title>Jayapritha Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <style>
+  body {
+  padding-top: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color:crimson;
+  color:white;
+}
+#navbar{
+  display:inline-block;
+  top:0;
+  left:0;
+  right:0;
+  height:50px;
+  padding:15px;
+  position:fixed;
+  background-color:black;
+}
+nav li ,a{
+  list-style:none;
+  padding-right:45px;
+  display:inline-block;
+  text-decoration:none;
+  float:right;
+  font-size:20px;
+  color:white;
+  font-weight:bold;
+}
+#welcome-section{
+  margin-top:200px;
+  padding-left:200px;
+  padding-right:200px;
+  height:50vh;
+}
+ 
+@media (max-width:500px){
+  body{
+    background-color:pink;
+  }
+}
+#welcome-section h1{
+  font-size:60px;
+}
+#projects{
+  background-color:#483D8B;
+  height:1500px;
+  padding-top:100px;
+  text-align:center;
+  margin-bottom:300px;
+}
+.project-tile{
+    display:block;
+    width: 500px;
+    height: 420px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 5px ridge white;
+   background-color:black;
+     border-radius:20px;
+   
+}
+.image{
+   width: 450px;
+    height:250px;
+    padding-left:20px;
+    border-radius:10px;
+  
+}
+.project-tile h3{
+  font-size:30px;
+}
+#tribute{
+  margin-left:700px;
+}
+#survey ,#product{
+  margin-left:100px;
+}
+#projects h1{
+  font-size:50px;
+  margin-top:-30px;
+}
+#button{
+  border-radius:10px;
+  background-color:white;
+  font-size:20px;
+  font-weight:bold;
+  color:black;
+  padding:10px;
+  margin:10px;
+}
+#button:hover{
+  font-size:25px;
+  border:2px solid green;
+  color:green;
+} 
+#profile{
+   text-align:center;
+   height:300px;
+   margin-top:-200px;
+   border:4px dashed white;
+   padding:10px;
+}
+.links:hover {
+  top: 15px;
+}
+.links{
+  display:inline-block;
+   position: relative;
+    top: 0;
+  transition: top ease 0.5s;
+  padding-right:20px;
+}
+.image2{
+  height:50px;
+  width:50px;
+  padding-right:10px;
+}
+
+#profile h1{
+  font-size:50px;
+}
+  </style>
+  <body>
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#profile">Contact</a></li>
+        <li><a href="#projects">Projects</a></li> 
+        <li><a href="#welcome-section">About</a></li>  
+        </ul> 
+      </nav>  
+    </div>
+    <section  id="welcome-section">
+      <h1>It's Me Jayapritha N</h1> 
+      <p>Hello and Welcome to my Portfolio, I have passion to work in the Web techologies space and programming languages and also love exploring and learning new technologies.</p>
+      </section>
+    
+      <section  id="projects">
+        <h1>These are some of My Projects</h1>
+        
+           <div class="project-tile" id="survey">
+                <h3>Survey Form</h3>
+                <a href="https://codepen.io/Jayapritha/full/VweNWEg" target="_blank"><img src="https://i.ibb.co/4dbn99G/survey-form.png" alt="survey-form" border="0" class="image"></a>
+              <button type="button" id="button" onclick="window.open('https://codepen.io/Jayapritha/full/VweNWEg','_blank')" >View Me</button>
+            </div>
+        
+        
+            <div class="project-tile" id="tribute">
+                 <h3>Tribute Page</h3>
+                 <a href="https://codepen.io/Jayapritha/full/yLewzPL" target="_blank"><img src="https://i.ibb.co/gzQvKJ7/abdulkalam.png" alt="abdulkalam" border="0" class="image"></a>
+               <button type="button" id="button" onclick="window.open('https://codepen.io/Jayapritha/full/yLewzPL','_blank')" >View Me</button>    
+           </div>
+        
+        
+            <div class="project-tile" id="product">
+                <h3>Product Landing Page</h3>
+                 <a href="https://codepen.io/Jayapritha/full/JjGVOxa" target="_blank"><img src="https://i.ibb.co/FDJvDjP/product-landing-html.png" alt="product-landing-html" border="0"  class="image"></a>
+               <button type="button" id="button" onclick="window.open('https://codepen.io/Jayapritha/full/JjGVOxa','_blank')" >View Me</button>
+            </div>
+      </section>
+    
+    
+         <div id="profile">
+           <h1>Contact Me</h1> <br><br><br>   
+           <div class="links">
+             <img src="https://i.ibb.co/qLSnny2/github.png" alt="github" border="0" class="image2">
+             <a id="profile-link" href="https://github.com/Jayapritha21" target="_blank"><h4>Github</h4></a>
+           </div>
+             
+           <div class="links">
+             <img src="https://i.ibb.co/6mqDqWc/facebook.png" alt="facebook" border="0" class="image2">             
+             <a id="profile-link2" href="https://www.facebook.com/jaya.pritha.777/" target="_blank"><h4>Facebook</h4></a>
+           </div>
+             
+           <div class="links">
+             <img src="https://i.ibb.co/XbqGTPB/mail.png" alt="mail" border="0" class="image2">             
+             <a id="profile-link3" href="mailto:jaya9282@outlook.com" target="_blank"><h4>Mail Me</h4></a>
+           </div>
+         </div>
+  </body>
+</html>  
+  
+  
